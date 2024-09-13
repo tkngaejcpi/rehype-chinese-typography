@@ -1,0 +1,39 @@
+{
+	"name": "@rileycki3333/rehype-chinese-typography",
+	"description": "a rehype preprocessing plugin for chinese typography",
+	"license": "GLP-3.0",
+	"version": "1.0.0",
+	"author": {
+		"name": "Riley Chang",
+		"email": "rileycki3333@gmail.com"
+	},
+	"keywords": [
+		"unified",
+		"rehype",
+		"plugin",
+		"syntax",
+		"tree",
+		"chinese",
+		"typography"
+	],
+	"main": "./index.js",
+	"type": "module",
+	"scripts": {
+		"test": "node ./test.js",
+		"fmt": "prettier ./*.js ./lib/**/*.js -w"
+	},
+	"devDependencies": {
+		"@types/hast": "^3.0.4",
+		"@types/node": "^22.5.4",
+		"hastscript": "^9.0.0",
+		"prettier": "^3.3.3",
+		"rehype-parse": "^9.0.0",
+		"rehype-stringify": "^10.0.0",
+		"unified": "^11.0.5"
+	},
+	"prettier": {
+		"useTabs": true,
+		"semi": true,
+		"singleQuote": true
+	}
+}
