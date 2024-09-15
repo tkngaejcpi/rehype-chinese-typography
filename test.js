@@ -7,18 +7,16 @@ import { h } from 'hastscript';
 import rehypeParse from 'rehype-parse';
 import rehypeStringify from 'rehype-stringify';
 
-import {
-	closingCompressableClassName,
-	openingCompressableClassName,
-	rehypeMarkCompressable,
-} from './lib/compressable.js';
-import {
-	hangableClassName,
-	hangableContainerClassName,
-	rehypeMarkHangable,
-} from './lib/hangable.js';
-import { separatorClassName, rehypeMarkSeparator } from './lib/separator.js';
+import { rehypeMarkCompressable } from './lib/compressable.js';
+import { rehypeMarkHangable } from './lib/hangable.js';
+import { rehypeMarkSeparator } from './lib/separator.js';
 import { t, map, flatMap, stopRecursionClassName } from './lib/utils.js';
+
+const openingCompressableClassName = 'r-typography-opening-compressable';
+const closingCompressableClassName = 'r-typography-closing-compressable';
+const hangableContainerClassName = 'r-typography-hangable-container';
+const hangableClassName = 'r-typography-hangable';
+const separatorClassName = 'r-typography-western-phrase-separator';
 
 describe('utils', function () {
 	const tree = h('article', [
